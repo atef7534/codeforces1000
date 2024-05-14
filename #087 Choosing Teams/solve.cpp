@@ -5,14 +5,24 @@ using namespace std;
 
 int main(void)
 {
-  int size, k, c = 0; cin >> size >> k;
+  int size, k, team = 0, c = 0; cin >> size >> k;
 
   while (size--)
   {
     int x; cin >> x;
-    c += (x < k);
+    
+    if (x + k <= 5)
+    {
+      team++;
+    }
+
+    if (team == 3)
+    {
+      team = 0;
+      c++;
+    }
   }
 
-  cout << c / 3 << "\n";
+  cout << c << "\n";
   return 0;
 }
