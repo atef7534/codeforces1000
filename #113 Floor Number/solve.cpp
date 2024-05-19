@@ -17,13 +17,19 @@ int main(void)
 
 void solve()
 {
-  string s, code = "codeforces"; cin >> s;
-  int c = 0;
-  for (int i = 0; s[i] != '\0'; i++)
+  int n, x, floor = 1; cin >> n >> x;
+  if (n <= 2)
   {
-    if (s[i] != code[i])
-      ++c;
+    cout << floor << "\n";
+    return;
   }
-  cout << c << "\n";
+  int track = 2;
+  while (track < n)
+  {
+    floor++;
+    track += x;
+  }
+  
+  cout << floor << "\n";
   return;
 };
