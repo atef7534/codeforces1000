@@ -1,6 +1,6 @@
 <h1>Codeforces Solutions</h1>
 
-<ul>
+<ol>
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23001%20Buy%20a%20Shovel/solve.cpp'>#001 Buy a Shovel</a></li>
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23002%20Colorful%20Stones%20(Simplified%20Edition)/solve.cpp'>#002 Colorful Stones (Simplified Edition)</a></li>
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23003%20Die%20Roll/solve.cpp'>#003 Die Roll</a></li>
@@ -128,4 +128,4 @@
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23125%20Mahmoud%20and%20Ehab%20and%20the%20even-odd/solve.cpp'>#125 Mahmoud and Ehab and the even-odd</a></li>
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23126%20Phone%20Desktop/solve.cpp'>#126 Phone Desktop</a></li>
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23127%20Symmetric%20Encoding/solve.cpp'>#127 Symmetric Encoding</a></li>
-</ul>
+</ol>
