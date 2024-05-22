@@ -128,4 +128,14 @@
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23125%20Mahmoud%20and%20Ehab%20and%20the%20even-odd/solve.cpp'>#125 Mahmoud and Ehab and the even-odd</a></li>
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23126%20Phone%20Desktop/solve.cpp'>#126 Phone Desktop</a></li>
   <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23127%20Symmetric%20Encoding/solve.cpp'>#127 Symmetric Encoding</a></li>
+  <li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23126%20Phone%20Desktop/solve.cpp'>#126 Phone Desktop</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23127%20Symmetric%20Encoding/solve.cpp'>#127 Symmetric Encoding</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23128%20Colourblindness/solve.cpp'>#128 Colourblindness</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23129%20Ordinary%20Numbers/solve.cpp'>#129 Ordinary Numbers</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23130%20Word%20on%20the%20Paper/solve.cpp'>#130 Word on the Paper</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23131%20Odd%20Set/solve.cpp'>#131 Odd Set</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23132%20Gifts%20Fixing/solve.cpp'>#132 Gifts Fixing</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23133%20Following%20Directions/solve.cpp'>#133 Following Directions</a></li>
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23134%20Atilla's%20Favorite%20Problem/solve.cpp'>#134 Atilla's Favorite Problem</a></li> 
+<li><a href='https://github.com/atef7534/codeforces1000/tree/main/%23135%20Maximum%20Increase/solve.cpp'>#135 Maximum Increase</a></li>
 </ol>
