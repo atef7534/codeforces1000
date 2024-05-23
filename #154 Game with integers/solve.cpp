@@ -7,10 +7,9 @@ int main(void)
 
   while (tt--)
   {
-    int x;
-    std::cin >> x;
-
-    std::cout << x - 1 << " 1\n";
+    int n;
+    std::cin >> n;
+    (n % 3) ? std::cout << "First\n" : std::cout << "Second\n";
   }
   return 0;
 }
