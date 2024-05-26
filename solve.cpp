@@ -1,6 +1,5 @@
 #include <iostream>
 #include <vector>
-#include <limits>
 
 int main(void)
 {
@@ -9,28 +8,46 @@ int main(void)
 
   while (tt--)
   {
-    int n;
-    std::cin >> n;
+    std::vector<std::vector<int>> v(10, std::vector<int>(10, 0));
 
-    std::vector<int> a(n);
-    bool ok = true;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < 10; i++)
     {
-      std::cin >> a[i];
-      if (i) ok &= (a[i] >= a[i - 1]);
-    }
-    if (!ok)
-    {
-      std::cout << "0\n";
-      continue;
+      for (int j = i; j < 10 - i; j++)
+      {
+        v[i][j] = i + 1;
+        v[10 - i - 1][j] = i + 1;
+      }
     }
 
-    int mn = std::numeric_limits<int>::max();
-    for (int i = 1; i < n; i++)
-      mn = std::min(mn, (a[i] - a[i - 1]) / 2);
-    
-    std::cout << mn + 1 << "\n";
+    for (int i = 1; i <= 4; i++)
+    {
+      for (int j = 0; j < i; j++)
+      {
+        v[i][j] = j + 1;
+        v[10 - i - 1][j] = j + 1;
+      }
+    }
+    for (int i = 1; i <= 4; i++)
+    {
+      for (int j = 9; j >= 10 - i; j--)
+      {
+        v[i][j] = v[i][10 - j - 1];
+        v[10 - i - 1][j] = v[i][10 - j - 1];
+      }
+    }
+
+    int ans = 0;
+    for (int i = 0; i < 10; i++)
+    {
+      for (int j = 0; j < 10; j++)
+      {
+        char c; std::cin >> c;
+        if (c != '.')
+          ans += v[i][j];
+      }
+    }
+
+    std::cout << ans << "\n";
   }
   return 0;
-  
 }
