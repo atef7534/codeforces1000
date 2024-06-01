@@ -7,11 +7,9 @@ int main(void)
 
   while (t--)
   {
-    int n, _;
+    int n;
     std::cin >> n;
-    for (_ = 1; _ <= n; _++)
-      std::cout << 1 << " ";
-    std::cout << "\n";
+    std::cout << n / 2 << " " << (n & 1 ? n - 1 : n) << "\n";
   }
   return 0;
 }
