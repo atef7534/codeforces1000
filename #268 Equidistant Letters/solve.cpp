@@ -14,12 +14,10 @@ int main(void)
 
 void solve()
 {
-  long long r, b, d;
-  std::cin >> r >> b >> d;
+  std::string s;
+  std::cin >> s;
 
-  if (d == 0 && r == b || std::min(r, b) * (d + 1) >= std::max(r, b))
-    std::cout << "YES\n";
-  else
-    std::cout << "NO\n";
+  std::sort(s.begin(), s.end());
+  std::cout << s << "\n";
   return;
 }
