@@ -16,13 +16,17 @@ int main(void)
 
 void solve()
 {
-  int a, b, c;
-  std::cin >> a >> b >> c;
+  int n;
+  std::cin >> n;
 
-  /*
-    2 1 1
-    
-  */
-  std::cout << std::min(2 * a - 1, 2 * (b + c) + 1) << "\n";
+  std::vector<int> a(n);
+  int x = 0;
+  for (int i = 0; i < n; i++)
+  {
+    std::cin >> a[i];
+    if (a[i] == i + 1)
+      ++x;
+  }
+  std::cout << (x + 1) / 2 << "\n";
   return;
 }

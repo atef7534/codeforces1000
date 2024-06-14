@@ -16,13 +16,10 @@ int main(void)
 
 void solve()
 {
-  int a, b, c;
+  long long a, b, c;
   std::cin >> a >> b >> c;
 
-  /*
-    2 1 1
-    
-  */
-  std::cout << std::min(2 * a - 1, 2 * (b + c) + 1) << "\n";
+  long long r = a + b + c;
+  std::cout << (r / 2)  << "\n";
   return;
 }
