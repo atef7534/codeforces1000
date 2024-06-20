@@ -23,30 +23,20 @@ int main(void)
 
 void solve()
 {
-  int n, m;
-  std::cin >> n >> m;
+  int n, k;
+  std::cin >> n >> k;
 
-  std::map<int, bool> f;
+  std::vector<int> a(101, 0);
+  bool ok = false;
   for (int i = 0; i < n; i++)
   {
     int x;
     std::cin >> x;
-    f[x] = 1;
+    ++a[x];
+    ok |= (a[x] == k);
   }
 
-  int ans = -1;
-  for (int i = 0; i < m; i++)
-  {
-    int y;
-    std::cin >> y;
-
-    if (f[y])
-      ans = y;
-  }
-
-  if (ans != -1)
-    std::cout << "YES\n1 " << ans << '\n';
-  else
-    std::cout << "NO\n";
+  std::cout << (ok ? k - 1 : n);
+  std::cout << '\n';
   return;
 }
