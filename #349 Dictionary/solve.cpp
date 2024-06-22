@@ -23,20 +23,15 @@ int main(void)
 
 void solve()
 {
-  int posX,
-      posY,
-      disOfX,
-      disOfY;
-  
-  std::cin >> posX
-           >> posY
-           >> disOfX
-           >> disOfY;
-  
-  int diff = posY - posX;
-  if (diff % (disOfX + disOfY) || (disOfX + disOfY) > diff)
-    std::cout << "-1\n";
-  else
-    std::cout << diff / (disOfX + disOfY) << '\n';
+  std::string word;
+  std::cin >> word;
+
+  int times = (word.at(0) - 'a') * 25;
+  int index = (word.at(1) - 'a') + 1;
+
+  if (word.at(1) > word.at(0))
+    --index;
+
+  std::cout << times + index << '\n';
   return;
 }

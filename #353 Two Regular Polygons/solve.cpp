@@ -23,20 +23,11 @@ int main(void)
 
 void solve()
 {
-  int posX,
-      posY,
-      disOfX,
-      disOfY;
+  int fNum, 
+      sNum;
+  std::cin >> fNum
+           >> sNum;
   
-  std::cin >> posX
-           >> posY
-           >> disOfX
-           >> disOfY;
-  
-  int diff = posY - posX;
-  if (diff % (disOfX + disOfY) || (disOfX + disOfY) > diff)
-    std::cout << "-1\n";
-  else
-    std::cout << diff / (disOfX + disOfY) << '\n';
+  std::cout << ((!(fNum % sNum) && sNum > 1) ? "YES\n" : "NO\n");
   return;
 }

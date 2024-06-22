@@ -23,20 +23,19 @@ int main(void)
 
 void solve()
 {
-  int posX,
-      posY,
-      disOfX,
-      disOfY;
+  int size,
+      limit;
+  std::cin >> size
+           >> limit;
   
-  std::cin >> posX
-           >> posY
-           >> disOfX
-           >> disOfY;
-  
-  int diff = posY - posX;
-  if (diff % (disOfX + disOfY) || (disOfX + disOfY) > diff)
-    std::cout << "-1\n";
-  else
-    std::cout << diff / (disOfX + disOfY) << '\n';
+  int minE = 0;
+  for (int itr = 0; itr < size; itr++)
+  {
+    int tmp;
+    std::cin >> tmp;
+    minE += tmp;
+  }
+
+  std::cout << std::abs(std::min(0, limit - minE)) << '\n';
   return;
 }
