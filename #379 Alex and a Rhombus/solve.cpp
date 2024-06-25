@@ -20,6 +20,11 @@ void solve()
   int n;
   std::cin >> n;
 
-  std::cout << n * n + --n * n << '\n';
+  int total = 0;
+  for (int itr = 0; itr < n - 1; itr++)
+    total += 2 * (2 * itr + 1);
+  total += (--n * 2) + 1;
+
+  std::cout << total << '\n';
   return;
 }
