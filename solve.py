@@ -1,19 +1,19 @@
 """
-  author: atef_ai
-  date: Jul 18 2024
-  problem: Andryusha and Socks
+  1 2 3 4
+  2 1 4 3
+  2 3 4 1
+  4 1 2 3
+  4 3 2 1
+
+  1 2 3 4 5 6
+  
+  2 1 4 3 6 5
+  2 3 4 1 6 5
+  2 3 4 5 6 1
+  2 1 4 5 6 3
+  2 1 6 5 4 3
+  2 1 6 3 4 5
+
+  e = 
+  o = 3 * 2 * 1 = 6
 """
-n = int(input())
-table = [0] * 100001
-arr = list(map(int, input().split()))
-ans = 0
-length = 0
-for num in arr:
-  if table[num]:
-    table[num] -= 1
-    length -= 1
-  else:
-    table[num] += 1
-    length += 1
-  ans = max(ans, length)
-print(ans)
