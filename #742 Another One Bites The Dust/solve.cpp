@@ -4,11 +4,8 @@
 #include <vector>
 using namespace std;
 int main(void) {
-  int t; cin >> t;
-  while (t--) {
-    long long a, b;
-    cin >> a >> b;
-    cout << -a << ' ' << a << '\n';
-  }
+  long long a, b, c;
+  cin >> a >> b >> c;
+  cout << min(a, b) * 2 + (a != b) + 2 * c << '\n';
   return 0;
 }

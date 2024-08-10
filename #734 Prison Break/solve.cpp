@@ -1,14 +1,14 @@
 #include <iostream>
 #include <string>
 #include <algorithm>
-#include <vector>
 using namespace std;
+
 int main(void) {
   int t; cin >> t;
   while (t--) {
-    long long a, b;
-    cin >> a >> b;
-    cout << -a << ' ' << a << '\n';
+    int n, m, r, c;
+    cin >> n >> m >> r >> c;
+    cout << max(n - r, r - 1) + max(m - c, c - 1) << '\n';
   }
   return 0;
 }
