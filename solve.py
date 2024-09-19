@@ -1,10 +1,5 @@
-t = int(input())
-for _ in range(t):
-  s = input()
-  # solution
-  if s.endswith("po"):
-    print("FILIPINO")
-  elif s.endswith("mnida"):
-    print("KOREAN")
-  else:
-    print("JAPANESE")
+import yaml
+from langchain_community.agent_toolkits import JsonToolkit, create_json_agent
+from langchain_community.tools.json.tool import JsonSpec
+from langchain_openai import OpenAI
+
