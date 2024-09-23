@@ -1,36 +1,34 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <math.h>
+
+#define min(a, b) ((a) < (b) ? (a) : (b))
+#define max(a, b) ((a) > (b) ? (a) : (b))
 
 int main(void) {
   int t;
   scanf("%d", &t);
-
   while (t--) {
-    int n;
-    scanf("%d", &n);
-
-    char *s = (char *) malloc(sizeof(char) * (n + 1));
-    scanf("%s", s);
-
-    int p = 0;
-    while (p < n && s[p] == '1') {
-      p ++;
+    int n, k;
+    scanf("%d%d", &n, &k);
+    int *a = (int *) calloc(k + 1, sizeof(int));
+    if (a == NULL) {
+      return 1;
     }
-    if (p == n) {
-      if (p == 4) {
-        printf("Yes\n");
-      } else {
-        printf("No\n");
+    int ans = 0;
+    for (int i = 0; i < n; i++) {
+      int _tmp = 0;
+      for (int j = 0; j < k; j++) {
+        char c;
+        scanf(" %c", &c);
+        if (c == '+') {
+          _tmp++;
+        }
       }
-    } else {
-      p--;
-      if (p * p == n) {
-        printf("Yes\n");
-      } else {
-        printf("No\n");
-      }
+      ans = max(ans, ++a[_tmp]);
     }
+    free(a);
+    printf("%d\n", ans);
   }
   return 0;
 }
+
