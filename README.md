@@ -67,13 +67,13 @@ python3 main.py < input.txt
 
 🚧 Future Improvements
 
-Add problem ratings and tags for each solution.
+-   Add problem ratings and tags for each solution.
 
-Group problems by topic (Greedy, Math, Strings, etc.).
+-   Group problems by topic (Greedy, Math, Strings, etc.).
 
-Add explanations / editorials for harder problems.
+-   Add explanations / editorials for harder problems.
 
-Create a test framework for automated checking.
+-   Create a test framework for automated checking.
 
 ✍️ Author
 
