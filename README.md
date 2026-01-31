@@ -2,7 +2,15 @@
 
 A collection of solutions to Codeforces problems (≈ rating 800-1100+), solved in **C++**, **Python**, and occasionally **C**.
 
----
+![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)
+![Static Badge](https://img.shields.io/badge/codeforces-contest-red?logo=codeforces)
+![Static Badge](https://img.shields.io/badge/-C++-purple?logo=cplusplus)
+![Static Badge](https://img.shields.io/badge/-CLang-blue?logo=C)
+![Static Badge](https://img.shields.io/badge/-Python-gold?logo=python)
+![Static Badge](https://img.shields.io/badge/-Kotlin-black?logo=kotlin)
+
+
+![](https://i.imgur.com/waxVImv.png)
 
 ## 📖 Purpose
 
