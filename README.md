@@ -1,89 +1,96 @@
-# Codeforces1000
+# Codeforces Problem Solving
 
-A collection of solutions to Codeforces problems (≈ rating 800-1100+), solved in **C++**, **Python**, and occasionally **C**.
+A personal archive of my **Codeforces problem-solving journey**, with solutions written mainly in **C++** and also in Python and C.
 
-![Static Badge](https://img.shields.io/badge/github-repo-blue?logo=github)
-![Static Badge](https://img.shields.io/badge/codeforces-contest-red?logo=codeforces)
-![Static Badge](https://img.shields.io/badge/-C++-purple?logo=cplusplus)
-![Static Badge](https://img.shields.io/badge/-CLang-blue?logo=C)
-![Static Badge](https://img.shields.io/badge/-Python-gold?logo=python)
-![Static Badge](https://img.shields.io/badge/-Kotlin-black?logo=kotlin)
+The repository is focused on building stronger fundamentals in algorithms, problem solving, implementation, and mathematical reasoning.
 
+## 🎯 Why this repository exists
 
-![](https://i.imgur.com/waxVImv.png)
+Competitive programming is one of the ways I practice thinking through problems before writing code.
 
-## 📖 Purpose
+For each problem, I try to:
 
-This repository is a record of my problem-solving journey on Codeforces.
-It contains solved problems of increasing difficulty, beginning with easier tasks, to build skill in algorithms, data structures, and implementation.
+1. Understand the problem and constraints.
+2. Find a simple and correct approach.
+3. Think about edge cases.
+4. Analyze the complexity.
+5. Implement and test the solution.
 
-The repo serves as both a personal archive and a resource for others preparing for competitive programming.
+The goal isn't just to collect solutions — it's to become better at solving unfamiliar problems.
 
----
+## 🧠 Topics
 
-## 🛠 Languages & Topics
+The repository currently includes problems involving:
 
--   **Languages**:
+- Implementation
+- Greedy algorithms
+- Strings
+- Mathematics
+- Number theory
+- Constructive algorithms
+- Arrays and basic data structures
+- Problem-specific techniques
 
-    -   C++ (main language)
-    -   Python (some solutions)
-    -   C (few solutions)
+More topics will be added as the collection grows.
 
--   **Topics covered**:
-    -   Greedy Algorithms
-    -   Strings & String Manipulation
-    -   Mathematics & Number Theory
-    -   Constructive Algorithms
-    -   Basic Implementation
-    -   (and more as problems progress)
+## 💻 Languages
 
----
+- C++ — primary language
+- Python
+- C
+- Kotlin — occasional solutions
 
-## 🗂 Structure
+## 📂 Organization
 
--   Each file or folder corresponds to one Codeforces problem (named/numbered).
--   Solutions are organized by problem rather than by topic or difficulty.
--   All solutions are written to be compiled and tested locally.
+Solutions are organized around individual Codeforces problems.
 
-Example structure:
-034-Arpa’s_hard_exam_and_Mehrdad’s_naive_cheat/
-solution.cpp
-050-New_Year_and_Hurry/
-main.py
-...
+Typical structure:
 
----
+```text
+problem-name/
+├── solution.cpp
+└── ...
+```
 
-## 🚀 How to use
+Some older solutions may use a single source file instead of a folder.
 
-1. Clone the repository:
+## 🚀 Run a solution
 
-    ```bash
-    git clone https://github.com/atef7534/codeforces1000.git
-    cd codeforces1000
-    ```
+Clone the repository:
 
-2. Navigate to a problem folder:
-   cd #034-Arpa’s_hard_exam_and_Mehrdad’s_naive_cheat
+```bash
+git clone https://github.com/atef7534/codeforces1000.git
+cd codeforces1000
+```
 
-3. Compile & run (C++ example):
-   g++ solution.cpp -std=c++17 -O2 -o solution
-   ./solution < input.txt
+For a C++ solution:
 
-Or run with Python:
-python3 main.py < input.txt
+```bash
+g++ solution.cpp -std=c++17 -O2 -o solution
+./solution
+```
 
-🚧 Future Improvements
+For Python:
 
--   Add problem ratings and tags for each solution.
+```bash
+python3 main.py
+```
 
--   Group problems by topic (Greedy, Math, Strings, etc.).
+Use the input format provided by the corresponding Codeforces problem.
 
--   Add explanations / editorials for harder problems.
+## 📈 What's next
 
--   Create a test framework for automated checking.
+I'd like to gradually make this repository more useful by adding:
 
-✍️ Author
+- Problem ratings
+- Codeforces tags
+- Short solution explanations
+- Complexity analysis
+- Better topic organization
+- Automated testing for selected problems
 
-Atef Yasser
-GitHub: @atef7534
+## 👨‍💻 Author
+
+**Atif Yasser**
+
+[GitHub](https://github.com/atef7534) · [LinkedIn](https://www.linkedin.com/in/atif-yasser/)
