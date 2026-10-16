@@ -1,16 +1,25 @@
 #include <iostream>
+using namespace std;
 
 int main(void) {
-    std::ios_base::sync_with_stdio(0);
-    std::cin.tie(0);
-    std::cout.tie(0);
+    // Speeding up our solution to make it use less time.
+    ios_base::sync_with_stdio(0);
+    cin.tie(0);
+    cout.tie(0);
 
-    int price, m; std::cin >> price >> m;
-    int x = 1;
-    while ((price * x) % 10 != m && (price * x) % 10 != 0) {
-        x++;
+    // Getting variables values as inputs
+    int price,
+        m; 
+    cin >> price >> m;
+
+    int counter = 1;
+    while (
+        (price * counter) % 10 != m 
+        && 
+        (price * counter) % 10 != 0) {
+        counter++;
     }
     
-    std::cout << x << "\n";
+    cout << counter << "\n";
     return 0;
 }
